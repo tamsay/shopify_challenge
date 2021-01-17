@@ -6,7 +6,7 @@ let currentPage = document.querySelector('#pageValue');
 let showResults = document.querySelector('#result-display-div');
 let showNominations = document.querySelector('#nominated-movies')
 let totalResult = document.querySelector('#total-result')
-let nominationCount = document.querySelector('.nomination-complete-div')
+// let nominationCount = document.querySelector('.nomination-complete-div')
 let nominationPlaceholder = document.querySelector('.nomination-placeholder')
 let searchValue = document.querySelector('#search-value')
 
@@ -192,7 +192,8 @@ let nominateMovie = () =>{
                     displayNominations(data)
                 }
                 else{
-                    nominationCount.innerText = 'Vote don finish'
+                    // nominationCount.innerText = 'Vote don finish'
+                    alert('Maximum number of movie nominated, remove one from the nominated list to make a new nomination')
                 }
                     
                 })
@@ -223,7 +224,7 @@ let removeVotedMovie =()=>{
                     nominationPlaceholder.style.display = 'block'
                 }
 
-                nominationCount.innerText = ''
+                // nominationCount.innerText = ''
             })
         })
 }
