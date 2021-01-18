@@ -248,6 +248,7 @@ body{
 .title{
     padding: 0%;
     margin: 0%;
+    font-size: 1.375em;
 }
 .search-bar{
     display: flex;
@@ -262,7 +263,7 @@ body{
 .search-bar #search-input{
     flex-grow: 1;
     margin: 0%;
-    font-size: 1em;
+    font-size: 0.875em;
     padding-left: 0.5em;
     border-radius: 5px;
     border: none;
@@ -290,7 +291,7 @@ body{
 .search-result-header{
     display: flex;
     justify-content: space-between;
-    padding: 0.5em 0em;
+    padding: 0.5em 0em 1.5em 0em;
     height: 7.5%;
 }
 .search-result-header p{
@@ -376,18 +377,18 @@ body{
     font-size: 0.875em;
 }
 .movie-details .movie-title{
-    font-size: 0.75em;
+    font-size: 0.875em;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .movie-details .movie-year{
-    font-size: 0.575em;
+    font-size: 0.6em;
     font-weight: 900;
 }
 .movie-details .movie-id-descriptor{
-    font-size: 0.5em;
+    font-size: 0.575em;
     margin-right: 0.25em;
     font-weight: bold;
 }
@@ -396,7 +397,7 @@ body{
     align-items: center;
 }
 .movie-details .movie-id{
-    font-size: 0.5em;
+    font-size: 0.575em;
     font-weight: 600;
 }
 .movie-details button{
@@ -429,9 +430,14 @@ body{
 /* Nomination Div */
 #nomination-div{
     height: 50%;
+    padding-top: 0.5em;
 }
 #nomination-div .nomination-div-header{
     height: 7.5%;
+    font-size: 1em;
+}
+#nomination-div .nomination-div-header h3{
+    font-size: 1em;
 }
 .nomination-placeholder{
     font-style: italic;
