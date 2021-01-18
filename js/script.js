@@ -12,7 +12,14 @@ let searchValue = document.querySelector('#search-value')
 
 title.addEventListener('input', ()=>{
     let queryValue = title.value.toLowerCase();
-    getMovies(queryValue)
+    if(title.value === ''){
+        console.log('error')
+        showResults.innerText = 'Kindly enter a search value'
+        totalResult.innerText = '0'
+    }
+    else{
+        getMovies(queryValue)
+    }
     searchValue.innerText = queryValue;
 })
 
@@ -23,7 +30,13 @@ let getMovies =(title, pageNumber=1)=>{
         console.log(data)
         if(data.Response === 'False'){
             console.log(data.Error)
-            showResults.innerText = data.Error;
+            if(data.Error === 'Too many results.'){
+                showResults.innerText = `${data.Error} Kindly input at least three characters`;
+                totalResult.innerText = '-'
+            }
+            else{
+                showResults.innerText = data.Error;
+            }
         }
         else{
             previousPage.classList.remove('disabled')
