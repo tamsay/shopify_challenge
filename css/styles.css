@@ -229,3 +229,220 @@ body{
     overflow-y: auto;
     height: 92.5%;
 }
+
+
+@media all and (max-width:575px){
+
+.wrapper{
+    max-width: 1280px;
+    width: 100%;
+    background-color: #fbf7ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0em 0.5em;
+}
+
+.title{
+    padding: 0%;
+    margin: 0%;
+}
+.search-bar{
+    display: flex;
+    width: 100%;
+    padding: 0em 0.5em;
+    margin: 0.5em 0em;
+    align-items: center;
+    height: 5vh;
+    justify-content: center;
+    background-color: white;
+}
+.search-bar #search-input{
+    flex-grow: 1;
+    margin: 0%;
+    font-size: 1em;
+    padding-left: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.search-bar i{
+    margin-left: 0.5em;
+}
+
+.content-area{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    height: 85vh;
+    border-radius: 10px;
+}
+
+.content-area #search-result-div{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-result-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0em;
+    height: 7.5%;
+}
+.search-result-header p{
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.75em;
+}
+.search-result-header .query-paragraph{
+    font-size: 0.75em;
+    margin: 0%;
+    padding: 0%;
+}
+.query-paragraph #search-value{
+    font-weight: 900;
+    font-size: 1em;
+}
+.search-result-header #total-result{
+    font-weight: 900;
+    font-size: 1em;
+}
+#search-result-div #result-display-div{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    overflow-y: auto;
+    padding: 0em 0em;
+}
+#search-result-div #pagination-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0em;
+    height: 7.5%;
+    font-size: 0.75em;
+}
+#pagination-div .previous-page-div{
+    
+}
+#pagination-div .current-page-div{
+    margin: 0em 0.75em;
+}
+
+#pagination-div .next-page-div{
+    
+}
+#pagination-div #pageValue{
+    font-size: 1.125em;
+}
+#pagination-div i{
+    margin: 0em 0.5em;
+    font-size: 0.75em;
+}
+#pagination-div .page-nav{
+    margin: 0em 0.75em;
+}
+
+/* Movie Item */
+.movie-wrapper{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0.25em 0em;
+    padding: 0.25em;
+    border-radius: 10px;
+    background-color: #fbf7ed;
+}
+.movie-wrapper i{
+    font-size: 0.5em;
+    margin: 0em 0.125em;
+}
+.thumbnail-div{
+    width: 15%;
+    margin-right: 0.5em;
+    padding: 0%;
+}
+.movie-thumbnail{
+    width: 100%;
+}
+.movie-wrapper .movie-details{
+}
+.movie-details p{
+    margin: 0%;
+    font-size: 0.875em;
+}
+.movie-details .movie-title{
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movie-details .movie-year{
+    font-size: 0.575em;
+    font-weight: 900;
+}
+.movie-details .movie-id-descriptor{
+    font-size: 0.5em;
+    margin-right: 0.25em;
+    font-weight: bold;
+}
+.movie-details .movie-id-div{
+    display: flex;
+    align-items: center;
+}
+.movie-details .movie-id{
+    font-size: 0.5em;
+    font-weight: 600;
+}
+.movie-details button{
+    border-radius: 5px;
+    padding: 0.125em 0.25em;
+    font-size: 0.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.movie-details .nominate-button:hover{
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.movie-details .remove-button{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.movie-details .remove-button:hover{
+    cursor: pointer;    
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+/* Nomination Div */
+#nomination-div{
+    height: 100%;
+}
+#nomination-div .nomination-div-header{
+    height: 7.5%;
+}
+.nomination-placeholder{
+    font-style: italic;
+    font-size: 1em;
+    padding: 1em;
+}
+#nominated-movies{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 92.5%;
+}
+
+}
