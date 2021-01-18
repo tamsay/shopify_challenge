@@ -44,6 +44,7 @@ body{
     padding: 1.5em 10em;
     align-items: center;
     height: 5vh;
+    justify-content: center;
 }
 .search-bar #search-input{
     flex-grow: 1;
