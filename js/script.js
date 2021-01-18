@@ -62,7 +62,7 @@ let displayResult =(data, pageNum, totalSearch)=>{
 
 let createMovieItem=(data, buttonText, buttonClass, category)=>{
     let movieWrapper = document.createElement('div')
-        movieWrapper.classList = 'movie-wrapper'
+        movieWrapper.classList = `movie-wrapper ${buttonText}`;
     
     let bulletIcon = document.createElement('i')
         bulletIcon.classList = 'fas fa-sign-out-alt'

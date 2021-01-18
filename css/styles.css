@@ -230,8 +230,50 @@ body{
     height: 92.5%;
 }
 
+.Remove{
+    animation: slideInFromLeft 0.5s ease-in;
+}
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromBottom{
+    0%{
+        transform: translatey(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 @media all and (max-width:575px){
+
+.Remove{
+    animation: slideInFromTop 0.5s ease-in;
+}
 
 .wrapper{
     max-width: 1280px;
@@ -438,11 +480,13 @@ body{
 }
 #nomination-div .nomination-div-header h3{
     font-size: 1em;
+    padding: 0%;
+    margin: 0%;
 }
 .nomination-placeholder{
     font-style: italic;
-    font-size: 1em;
-    padding: 1em;
+    font-size: 0.75em;
+    padding: 0.25em;
 }
 #nominated-movies{
     display: flex;
