@@ -428,7 +428,7 @@ body{
 
 /* Nomination Div */
 #nomination-div{
-    height: 100%;
+    height: 50%;
 }
 #nomination-div .nomination-div-header{
     height: 7.5%;
